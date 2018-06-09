@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.manager.compras.Compras">
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="30dp"
+            android:fontFamily="monospace"
+            android:text="Escolha Produtos"
+            android:textColor="@android:color/background_dark"
+            android:textSize="18sp" />
+
+        <CheckBox
+            android:id="@+id/arroz"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/tv"
+            android:layout_marginLeft="16dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="monospace"
+            android:text="Arroz - R$11,39"
+            android:textColor="@android:color/background_dark" />
+
+        <CheckBox
+            android:id="@+id/leite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/arroz"
+            android:layout_alignStart="@+id/arroz"
+            android:layout_below="@+id/arroz"
+            android:layout_marginTop="13dp"
+            android:fontFamily="monospace"
+            android:text="Leite - R$2,39" />
+
+        <CheckBox
+            android:id="@+id/carne"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/leite"
+            android:layout_alignStart="@+id/leite"
+            android:layout_below="@+id/leite"
+            android:layout_marginTop="16dp"
+            android:fontFamily="monospace"
+            android:text="Carne - R$15,90" />
+
+        <CheckBox
+            android:id="@+id/feijao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/carne"
+            android:layout_alignStart="@+id/carne"
+            android:layout_below="@+id/carne"
+            android:layout_marginTop="16dp"
+            android:text="Feijão - R$9,60" />
+
+        <Button
+            android:id="@+id/total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/feijao"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="41dp"
+            android:fontFamily="monospace"
+            android:text="Total Compra"
+            android:textColor="@android:color/background_dark" />
+
+        <EditText
+            android:id="@+id/resultado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="55dp"
+            android:ems="10"
+            android:fontFamily="monospace"
+            android:inputType="textPersonName" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

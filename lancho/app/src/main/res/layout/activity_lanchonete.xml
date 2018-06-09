@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Lanchonete">
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="134dp"
+            android:layout_marginTop="24dp"
+            android:text="lanchonete" />
+
+        <CheckBox
+            android:id="@+id/pic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="27dp"
+            android:layout_marginTop="86dp"
+            android:text="picanha burguer - R$19,50" />
+
+        <CheckBox
+            android:id="@+id/xs"
+            android:layout_width="164dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/pic"
+            android:layout_marginTop="129dp"
+            android:text="x-salada - R$10,50" />
+
+        <CheckBox
+            android:id="@+id/xb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/pic"
+            android:layout_marginTop="175dp"
+            android:text="x-burguer - R$15,90" />
+
+        <CheckBox
+            android:id="@+id/tpic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignStart="@+id/pic"
+            android:layout_marginTop="217dp"
+            android:text="triplo picanha - R$26,80" />
+
+        <CheckBox
+            android:id="@+id/coca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/pic"
+            android:layout_marginBottom="203dp"
+            android:text="coca-cola - R$3,50" />
+
+        <CheckBox
+            android:id="@+id/suco"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/pic"
+            android:layout_marginBottom="163dp"
+            android:text="sucos variaveis - R$7,50" />
+
+        <Button
+            android:id="@+id/total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="103dp"
+            android:text="Total" />
+
+        <EditText
+            android:id="@+id/resultado"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="41dp"
+            android:ems="10"
+            android:inputType="textPersonName" />
+
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>

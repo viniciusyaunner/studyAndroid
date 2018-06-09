@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.manager.myapplication.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="370dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteX="6dp"
+        tools:layout_editor_absoluteY="1dp">
+
+        <EditText
+            android:id="@+id/resultado"
+            android:layout_width="276dp"
+            android:layout_height="72dp"
+            android:layout_below="@+id/btnExibir"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="11dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="64dp"
+            tools:layout_editor_absoluteY="423dp" />
+
+        <Button
+            android:id="@+id/btnExibir"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/idade"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="26dp"
+            android:text="Exibir"
+            tools:layout_editor_absoluteX="148dp"
+            tools:layout_editor_absoluteY="353dp" />
+
+        <EditText
+            android:id="@+id/idade"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textView3"
+            android:layout_alignStart="@+id/textView3"
+            android:layout_below="@+id/textView3"
+            android:layout_marginTop="31dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="35dp"
+            tools:layout_editor_absoluteY="265dp" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="99dp"
+            android:layout_height="41dp"
+            android:layout_alignLeft="@+id/nome"
+            android:layout_alignStart="@+id/nome"
+            android:layout_below="@+id/nome"
+            android:layout_marginTop="24dp"
+            android:fontFamily="monospace"
+            android:text="Idade"
+            tools:layout_editor_absoluteX="35dp"
+            tools:layout_editor_absoluteY="198dp" />
+
+        <EditText
+            android:id="@+id/nome"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/textView4"
+            android:layout_alignRight="@+id/textView4"
+            android:layout_below="@+id/textView2"
+            android:layout_marginTop="19dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            tools:layout_editor_absoluteX="35dp"
+            tools:layout_editor_absoluteY="128dp" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="54dp"
+            android:layout_height="47dp"
+            android:layout_alignLeft="@+id/nome"
+            android:layout_alignStart="@+id/nome"
+            android:layout_below="@+id/textView4"
+            android:layout_marginTop="48dp"
+            android:fontFamily="monospace"
+            android:text="Nome"
+            tools:layout_editor_absoluteX="35dp"
+            tools:layout_editor_absoluteY="65dp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:text="Dados Pessoais"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.032" />
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
