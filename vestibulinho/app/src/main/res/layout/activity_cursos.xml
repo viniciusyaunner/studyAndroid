@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".cursos">
+
+    <RelativeLayout
+        android:layout_width="368dp"
+        android:layout_height="495dp"
+        tools:layout_editor_absoluteX="8dp"
+        tools:layout_editor_absoluteY="8dp">
+
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="294dp"
+            android:layout_height="70dp"
+            android:layout_alignParentTop="true"
+            app:srcCompat="@drawable/download" />
+
+        <ImageButton
+            android:id="@+id/fecha2"
+            android:layout_width="71dp"
+            android:layout_height="66dp"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/imageView4"
+            app:srcCompat="@android:drawable/btn_dialog" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginTop="119dp"
+            android:text="Para o 1° Semestre de 2018, a ETEC estará oferecendo os seguintes cursos" />
+
+        <Button
+            android:id="@+id/adm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="183dp"
+            android:text="administração" />
+
+        <Button
+            android:id="@+id/autind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignStart="@+id/adm"
+            android:layout_marginBottom="207dp"
+            android:text="automação ind." />
+
+        <Button
+            android:id="@+id/mec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="143dp"
+            android:layout_marginStart="39dp"
+            android:text="Mecanica" />
+
+        <Button
+            android:id="@+id/meca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignTop="@+id/adm"
+            android:layout_marginEnd="24dp"
+            android:text="mecatronica" />
+
+        <Button
+            android:id="@+id/enf"
+            android:layout_width="123dp"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/ds"
+            android:layout_alignTop="@+id/autind"
+            android:layout_marginStart="-20dp"
+            android:text="enfermagem" />
+
+        <Button
+            android:id="@+id/ds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="133dp"
+            android:layout_toEndOf="@+id/textView2"
+            android:text="D.S." />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="84dp"
+            android:text="Cursos tecnicos gratuitos" />
+
+        <Button
+            android:id="@+id/em"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/adm"
+            android:layout_below="@+id/emeca"
+            android:layout_marginTop="-67dp"
+            android:text="Ensino Medio" />
+
+        <Button
+            android:id="@+id/emeca"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignEnd="@+id/ds"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="67dp"
+            android:text="etim mecatronica" />
+
+        <Button
+            android:id="@+id/eds"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/mec"
+            android:layout_below="@+id/ds"
+            android:layout_marginTop="-133dp"
+            android:text="etim D.S." />
+
+        <Button
+            android:id="@+id/vest"
+            android:layout_width="205dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/emeca"
+            android:layout_marginTop="-67dp"
+            android:layout_toEndOf="@+id/adm"
+            android:text="www.vestibulinho.com" />
+    </RelativeLayout>
+</android.support.constraint.ConstraintLayout>
