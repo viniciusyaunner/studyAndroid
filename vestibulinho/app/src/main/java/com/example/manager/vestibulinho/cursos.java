@@ -16,21 +16,25 @@ public class cursos extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_cursos);
 
-        ImageButton fecha2 = (ImageButton) findViewById(R.id.fecha2);
-        fecha2.setOnClickListener(new View.OnClickListener() {
+        ImageButton btnFechar = (ImageButton) findViewById(R.id.btnFechar);
+        btnFechar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 cursos.this.finish();
             }
         });
-        Button curso = (Button) findViewById(R.id.curso);
-        curso.setOnClickListener(new View.OnClickListener() {
+
+
+        Button vest = (Button) findViewById(R.id.vest);
+        vest.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse("https://www.vestibulinhoetec.com.br/home/"));
                 startActivity(intent);
             }
         });
+
+
         Button adm = (Button) findViewById(R.id.adm);
         adm.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -43,7 +47,7 @@ public class cursos extends AppCompatActivity {
             }
         });
         Button autind = (Button) findViewById(R.id.autind);
-        adm.setOnClickListener(new View.OnClickListener() {
+        autind.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 AlertDialog.Builder msgautind = new AlertDialog.Builder(cursos.this);
@@ -55,7 +59,7 @@ public class cursos extends AppCompatActivity {
             }
         });
         Button mec = (Button) findViewById(R.id.mec);
-        adm.setOnClickListener(new View.OnClickListener() {
+        mec.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 AlertDialog.Builder msgmec = new AlertDialog.Builder(cursos.this);
@@ -66,8 +70,9 @@ public class cursos extends AppCompatActivity {
                 msgmec.show();
             }
         });
+
         Button eds = (Button) findViewById(R.id.eds);
-        adm.setOnClickListener(new View.OnClickListener() {
+        eds.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 AlertDialog.Builder msgeds = new AlertDialog.Builder(cursos.this);
@@ -82,23 +87,21 @@ public class cursos extends AppCompatActivity {
                 msgeds.show();
             }
         });
-        Button meca = (Button) findViewById(R.id.meca);
-        adm.setOnClickListener(new View.OnClickListener() {
+        Button em = (Button) findViewById(R.id.em);
+        em.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 AlertDialog.Builder msgmeca = new AlertDialog.Builder(cursos.this);
-                msgmeca.setTitle("Ensino Técnico\n");
-                msgmeca.setMessage(" O Ensino Técnico tem por objetivo capacitar o aluno com conhecimentos teóricos e práticos em diversas atividades do setor produtivo. Um de seus propósitos é o acesso imediato ao mercado de trabalho, além da perspectiva de requalificação ou mesmo reinserção no mercado.\n" +
+                msgmeca.setTitle("Ensino Médio\n");
+                msgmeca.setMessage("A Etec “Monsenhor Antônio Magliano” oferece três modalidades  de curso referentes ao Ensino Médio: Regular, Informática integrada ao Ensino Médio e Mecatrônica integrada ao Ensino Médio. Informações mais detalhadas quanto a esses cursos são apresentadas a seguir.\n" +
                         "\n" +
-                        "A Etec “Monsenhor Antônio Magliano” oferece ao todo seis cursos de nível técnico de excelente qualidade: Administração, Automação Industrial, Enfermagem, Informática, Mecatrônica e Segurança do Trabalho. Maiores detalhes quanto ao número de vagas, período e duração dos cursos são apresentados a seguir.\n" +
-                        "\n" +
-                        "   ");
+                        " ");
                 msgmeca.setNeutralButton("OK",null);
                 msgmeca.show();
             }
         });
         Button enf = (Button) findViewById(R.id.enf);
-        adm.setOnClickListener(new View.OnClickListener() {
+        enf.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 AlertDialog.Builder msgenf = new AlertDialog.Builder(cursos.this);
@@ -109,7 +112,7 @@ public class cursos extends AppCompatActivity {
             }
         });
         Button ds = (Button) findViewById(R.id.ds);
-        adm.setOnClickListener(new View.OnClickListener() {
+        ds.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 AlertDialog.Builder msgds = new AlertDialog.Builder(cursos.this);
@@ -121,7 +124,7 @@ public class cursos extends AppCompatActivity {
             }
         });
         Button emeca = (Button) findViewById(R.id.emeca);
-        adm.setOnClickListener(new View.OnClickListener() {
+        emeca.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 AlertDialog.Builder msgemeca = new AlertDialog.Builder(cursos.this);
@@ -132,6 +135,7 @@ public class cursos extends AppCompatActivity {
                 msgemeca.show();
             }
         });
+
 
     }
 }
